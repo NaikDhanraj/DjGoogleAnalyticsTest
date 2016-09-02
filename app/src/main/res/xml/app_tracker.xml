@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- AUTOMATIC SCREEN TRACKING:all the activity tracking will be automatic if i set ga_autoActivityTracking to true  -->
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+    <!-- MANUAL SCREEN TRACKING :if i want to keep the name for the screen for screen tracking,i need to mention it here-->
+    <screenName name="com.dssp.djgoogleanalyticstest.MainActivity" >Home Screen</screenName>
+    <screenName name="com.dssp.djgoogleanalyticstest.SecondActivity">Second Screen</screenName>
+    <!--fragment view tracking cant be done automatic like activity screen automatic tracking -->
+    <screenName name="com.dssp.djgoogleanalyticstest.fragment.FooterFragment">Footer Fragment</screenName>
+
+    <!--  The property id associated with this analytics tracker -->
+    <string name="ga_trackingId">UA-83372775-1</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <!--APP CRASHES ARE REPORTED AUTOMATICALLY BY SETTING ga_reportUncaughtExceptions to true -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+
+</resources>
